@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+fieldset {
+    border-radius: 15px;
+}
+
+
+.container {
+    width: 600px;
+    height: auto;
+    padding: 20px;
+
+}
+
+.container fieldset,
+.container div {
+    margin: 10px;
+}
+
+
+span {
+    color: red;
+}
+
+
+.id label {
+    display: block;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    border-width: 0.1px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+select {
+    width: 150px;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.con-button{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button {
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 12px 20px;
+    color: aliceblue;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    cursor: pointer;
+    transition:4s
+}
+
+.button:hover {
+    font-weight:900 ;
+}

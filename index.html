@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <form action="action.php" method="POST">
+      <fieldset class="container">
+        <fieldset class="id">
+          <label for="NAME">Full Name <span>*</span> :</label>
+          <input type="text" name="username" placeholder="Enter your name" maxlength="20" minlength="2" required>
+          <label for="CIN/PASSPORT">CIN/Passport <span>*</span> :</label>
+          <input type="text" name="userid" placeholder="Enter you CIN/Passport" maxlength="10" minlength="10" required>
+          <label for="DATE">Departure Date :</label>
+          <input type="date" name="userdd">
+          <label for="DATE">Arrival Date :</label>
+          <input type="date" name="userda">
+        </fieldset>
+        <fieldset class="reservation-type">
+          <legend>
+            Reservation Type
+          </legend>
+          <div>
+            <input type="radio" name="pension" value="full board" checked required>
+            <label>Full board</label>
+          </div>
+          <div>
+            <input type="radio" name="pension" value="half pension">
+            <label>half pension</label>
+          </div>
+        </fieldset>
+        <fieldset class="reservation-type">
+          <legend>
+            Room Type
+          </legend>
+          <div>
+            <input type="radio" name="room" value="single" checked required>
+            <label>Single</label>
+          </div>
+          <div>
+            <input type="radio" name="room" value="double">
+            <label>Double</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="NAME">Country</label>
+          <select name="country">
+            <option name="country" value="ma">Morocco</option>
+            <option name="country" value="alg">Algeria</option>
+            <option name="country" value="fr">France</option> name="country"
+            <option name="country" value="usa">United states</option>
+          </select>
+        </div>
+        <div class="con-button">
+          <input type="submit" class="button" value="submit" name="submit">
+          <input type="reset" class="button" value="Reset" name="reset" >
+        </div>
+      </fieldset>
+    </form>
+  </header>
+</body>
+
+</html>
